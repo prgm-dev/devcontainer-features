@@ -22,7 +22,7 @@ echo >>/etc/bash.bashrc
 
 echo "Foundry has been installed to '$FOUNDRY_DIR'."
 
-BASH_COMPLETION_DIR=$(pkg-config --variable=completionsdir bash-completion)
+BASH_COMPLETION_DIR=$(pkg-config --variable=completionsdir bash-completion || echo '')
 if [ -z "$BASH_COMPLETION_DIR" ]; then
     echo "bash-completion is not installed. Skipping foundry bash-completions..."
 else
