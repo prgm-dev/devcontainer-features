@@ -1,0 +1,11 @@
+{
+    "name": "Foundry",
+    "id": "getfoundry-cli",
+    "version": "0.0.1",
+    "description": "Installs Foundry tools (anvil, forge, etc.)",
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages",
+        "ghcr.io/devcontainers-contrib/features/apt-packages",
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
